@@ -1,0 +1,22 @@
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+@function font-calc($size, $device) {
+  @if ($device == "desktop") {
+    @return $size * 10vmax;
+  } @else if($device == "mobile") {
+    @return $size * 10vmin;
+  }
+}
+@function convert-unit($value, $unit) {
+  @if $unit == "%" {
+    @return $value * 1%;
+  }
+  @if $unit == "px" {
+    @return $value * 1px;
+  }
+}

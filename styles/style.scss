@@ -1,0 +1,488 @@
+@import "./Reset.scss";
+@import "./libs/mixin.scss";
+@import "./libs/Variable.scss";
+
+body {
+  @include flex(flex, center, center, column);
+  width: 100vw;
+  background-color: black;
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Top-barre {
+  @include dimensionMixt(87, 88);
+  @include flex(flex, space-between, center, row);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+.Logo,
+.Menu-hamburger {
+  flex: 1;
+  height: 100%;
+  @include flex(flex, flex-start, center, row);
+}
+.Menu-hamburger {
+  flex: 1;
+  z-index: 2;
+  justify-content: flex-end;
+}
+.Menu-hamburger {
+  cursor: pointer;
+}
+.Logo img {
+  max-width: 24%;
+}
+.Menu-container {
+  display: none;
+}
+.Menu-side {
+  @include dimensionMixt(0, 667);
+  @include flex(flex, center, flex-start, row);
+  background: rgba($White, 0.06);
+  backdrop-filter: blur(2em);
+  top: 0px;
+  right: -8%;
+  position: absolute;
+  z-index: 1;
+  transition: width 0.4s ease-in;
+  cursor: pointer;
+}
+.Menu-side-container {
+  @include dimension(100, 35);
+  margin-top: 34%;
+  display: none;
+}
+.Items-menu-mobile {
+  @include dimension(75, 10);
+  @include flex(flex, flex-start, center, row);
+  font-family: $Barlow;
+  letter-spacing: 2.5px;
+}
+.Items-menu-mobile span {
+  margin-right: 5%;
+}
+.Menu-open {
+  width: 67.5%;
+}
+.Menu-open-container {
+  @include flex(flex, space-evenly, center, column);
+}
+.Home {
+  @include dimension(100, 100);
+  @include flex(flex, flex-start, center, column);
+  display: none;
+  background-color: $Black;
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.Home-header-container {
+  @include dimensionMixt(100, 424);
+}
+.Home-header {
+  @include dimension(100, 100);
+  @include flex(flex, space-evenly, center, column);
+}
+.Home-title {
+  @include size(0.45, "mobile");
+  @include flex(flex, center, flex-end, row);
+  font-family: $BarlowCondensed;
+  letter-spacing: 2.4px;
+  height: 36%;
+}
+.Home-name {
+  @include size(2.15, "mobile");
+  @include flex(flex, center, center, row);
+  font-family: $Bellefair;
+  height: 37%;
+}
+.Home-text {
+  @include dimension(87, 44);
+  @include flex(flex, center, flex-start, row);
+  @include size(0.4, "mobile");
+  font-family: $Barlow;
+  line-height: 24.5px;
+  text-align: center;
+}
+.Explore-container {
+  @include dimensionMixt(100, 243);
+  @include flex(flex, center, center, row);
+}
+.Explore {
+  @include dimensionPx(150, 150);
+  @include flex(flex, center, center, row);
+  @include size(0.58, "mobile");
+  @include radius(50%);
+  font-family: $Bellefair;
+  padding-top: 1%;
+  background-color: $White;
+  color: $Black;
+}
+.Distination {
+  @extend .Home;
+  background-image: url("../assets/destination/background-destination-mobile.jpg");
+}
+.Distination-header {
+  @include dimensionMixt(100, 606);
+  @include flex(flex, center, center, column);
+  position: relative;
+}
+.Distination-title-container {
+  @include dimension(100, 17.6);
+  @include flex(flex, center, flex-end, row);
+}
+.Distination-title {
+  @include flex(flex, space-evenly, center, row);
+  @include size(0.4, "mobile");
+  width: 67%;
+  font-family: $BarlowCondensed;
+  letter-spacing: 3px;
+}
+.Distination-title div {
+  letter-spacing: 3px;
+}
+.Destination-image-container {
+  @include dimension(100, 33.2);
+  @include flex(flex, center, center, row);
+}
+.Distination-img {
+  @include dimension(100, 100);
+  @include flex(flex, center, flex-end, row);
+}
+.Distination-img img {
+  width: 45%;
+}
+.Distination-select-container {
+  @include dimension(100, 8.91);
+  @include flex(flex, center, center, row);
+}
+.Distination-select {
+  @include dimension(63, 100);
+  @include flex(flex, center, center, row);
+  @include size(0.4, "mobile");
+  font-family: $BarlowCondensed;
+}
+.Item-distination {
+  height: 100%;
+  @include flex(flex, flex-start, flex-end, row);
+  position: relative;
+}
+.Item-one {
+  width: 26%;
+}
+.Item-two {
+  width: 17%;
+  justify-content: flex-start;
+}
+.Item-three {
+  width: 31%;
+  justify-content: end;
+}
+.Item-four {
+  width: 27%;
+  justify-content: end;
+}
+
+.Item-distination a {
+  height: 69%;
+  @include flex(flex, center, center, row);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.Item-distination a:hover {
+  border-bottom: 3px solid $Gray;
+}
+.Distination-Selected {
+  border-bottom: 3px solid $White;
+}
+.Distination-name-container {
+  @include dimension(100, 12.38);
+  @include flex(flex, center, flex-end, row);
+}
+.Distination-name {
+  @include dimension(100, 60);
+  @include flex(flex, center, center, row);
+  @include size(1.49, "mobile");
+  font-family: $Bellefair;
+}
+.Distination-text-container {
+  @include dimension(100, 27.71);
+  @include flex(flex, center, center, row);
+}
+.Distination-text-container ::after {
+  content: "";
+  @include dimensionMixt(87, 1);
+  bottom: 0%;
+  background-color: rgba($ClearBlue, 0.3);
+  position: absolute;
+}
+.Distination-text {
+  @include dimension(84, 88);
+  @include flex(flex, center, flex-start, row);
+  @include size(0.38, "mobile");
+  font-family: $Barlow;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+}
+.Distination-details {
+  @include dimensionMixt(100, 244);
+  @include flex(flex, center, center, column);
+}
+.Distance-container {
+  @include dimension(100, 49);
+  @include flex(flex, center, center, column);
+}
+.Distance {
+  @include dimension(100, 67);
+  @include flex(flex, space-evenly, center, column);
+}
+.Detail-title {
+  @include size(0.42, "mobile");
+  letter-spacing: 1.8px;
+  font-family: $BarlowCondensed;
+}
+.Detail-vlaue {
+  @include size(0.75, "mobile");
+  font-family: $Bellefair;
+}
+.Travel-container {
+  @include dimension(100, 50);
+  @include flex(flex, flex-start, center, column);
+}
+.Travel {
+  @include dimension(100, 55);
+  @include flex(flex, space-around, center, column);
+}
+.Crew {
+  @extend .Home;
+  background-image: url("../assets/crew/background-crew-mobile.jpg");
+}
+.Crew-header-container {
+  @include dimensionMixt(100, 361);
+}
+.Crew-header {
+  @include dimension(100, 100);
+  @include flex(flex, center, center, column);
+  font-family: $Barlow;
+}
+.Crew-title-content {
+  @include dimension(100, 30);
+  @include flex(flex, center, flex-end, row);
+  z-index: 1;
+}
+.Crew-title {
+  @include dimension(48, 100);
+  @include flex(flex, space-around, flex-end, row);
+  letter-spacing: 2.4px;
+  font-family: $BarlowCondensed;
+}
+.Crew-title span {
+  color: rgba($ClearBlue, 0.5);
+  letter-spacing: 4px;
+}
+.Crew-title div {
+  @include size(0.45, "mobile");
+}
+.Crew-img-container {
+  @include dimension(100, 70);
+  @include flex(flex, center, flex-end, row);
+}
+.Crew-img img {
+  width: 50%;
+  margin-left: 4%;
+}
+
+.Crew-img {
+  @include dimension(87, 100);
+  @include flex(flex, center, flex-end, row);
+  position: relative;
+  z-index: 2;
+}
+.Crew-img::after {
+  content: "";
+  @include dimensionMixt(100, 1);
+  bottom: -0.5%;
+  background-color: rgba($ClearBlue, 0.3);
+  position: absolute;
+}
+.Crew-detail-container {
+  @include dimensionMixt(100, 349);
+  z-index: 3;
+}
+.Crew-select-container {
+  @include dimension(100, 22);
+  @include flex(flex, center, center, row);
+}
+.Crew-select-content {
+  @include dimension(32, 100);
+  @include flex(flex, space-evenly, center, row);
+}
+.Crew-select {
+  @include dimensionPx(10, 10);
+  border-radius: 50px;
+  background-color: rgba($White, 0.1);
+
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($White, 0.17);
+  }
+}
+.Crew-details-container {
+  @include dimension(100, 78);
+  @include flex(flex, space-evenly, center, column);
+  z-index: 1;
+}
+.Crew-details-content {
+  @include dimension(100, 20);
+  @include flex(flex, center, center, column);
+  font-family: $Bellefair;
+}
+.Position {
+  @include dimension(100, 40);
+  @include flex(flex, center, flex-start, row);
+  @include size(0.43, "mobile");
+}
+.Name {
+  @include dimension(100, 60);
+  @include flex(flex, center, center, row);
+  @include size(0.64, "mobile");
+}
+.Crew-details-text {
+  @include dimension(100, 80);
+  @include flex(flex, flex-start, center, column);
+  font-family: $Barlow;
+}
+.Crew-details-text p {
+  @include dimension(84, 81);
+  height: auto;
+  @include flex(flex, flex-start, center, column);
+  @include size(0.4, "mobile");
+  line-height: 25px;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.Technology {
+  @extend .Home;
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+}
+.Technology-header-container {
+  @include dimensionMixt(100, 309);
+}
+.Technology-header {
+  @extend .Crew-header;
+}
+.Technology-title-content {
+  @include dimension(100, 35);
+  @include flex(flex, center, center, row);
+}
+.Technology-title {
+  @include dimension(50, 100);
+  @include flex(flex, space-around, flex-end, row);
+  letter-spacing: 2.9px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.Technology-title span {
+  letter-spacing: 4px;
+}
+.Technology-title div {
+  @include size(0.42, "mobile");
+  line-height: 21px;
+}
+.Technology-img-container {
+  @include dimension(100, 65);
+  @include flex(flex, center, flex-end, row);
+}
+.Technology-img {
+  @include dimension(100, 85);
+  @include flex(flex, center, center, row);
+}
+.Technology-img img {
+  @include dimension(100, 100);
+  object-fit: cover;
+}
+.Technology-detail-container {
+  @include dimensionMixt(100, 401);
+}
+.Technology-select-container {
+  @include dimension(100, 25);
+  @include flex(flex, center, center, row);
+}
+.Technology-select-content {
+  @include dimension(49, 45);
+  @include flex(flex, space-evenly, flex-end, row);
+}
+.Technology-select {
+  @include dimension(21, 84);
+  @include flex(flex, space-evenly, center, row);
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid rgba($White, 0.2);
+  cursor: pointer;
+  &:hover {
+    border: 1px solid rgba($White, 1);
+  }
+}
+.Technology-details-container {
+  @include dimension(100, 75);
+  @include flex(flex, center, center, column);
+}
+.Technology-details-content {
+  @extend .Crew-details-content;
+  font-family: $Bellefair;
+}
+.Technology-position {
+  @include dimension(100, 25);
+  @include flex(flex, center, center, row);
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1.65px;
+  font-family: $BarlowCondensed;
+}
+.Technology-position :first-child {
+  @include flex(flex, flex-end, center, row);
+  width: 18%;
+  padding-left: 2%;
+}
+.Technology-position :last-child {
+  @include flex(flex, flex-start, center, row);
+  width: 40%;
+  padding-left: 2%;
+  letter-spacing: 2.2px;
+}
+
+.Technology-name {
+  @extend .Name;
+  @include dimension(100, 75);
+}
+.Technology-details-text {
+  @extend .Crew-details-text;
+  @include dimension(100, 80);
+  font-family: $Barlow;
+}
+.Technology-details-text p {
+  @include dimension(84, 81);
+  height: auto;
+  @include flex(flex, flex-start, center, column);
+  @include size(0.4, "mobile");
+  line-height: 25px;
+  text-align: center;
+  margin-top: 3%;
+}
+.Display {
+  display: flex;
+}
+.Selected {
+  background-color: $White;
+  color: $Black;
+}
+.Menu-selected {
+  border-bottom: 1px solid $White;
+}
+@import "./Tab.scss";
+@import "./desktop.scss";

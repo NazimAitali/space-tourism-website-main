@@ -1,0 +1,25 @@
+$Black: hsl(230, 35%, 7%);
+$ClearBlue: hsl(231, 77%, 90%);
+$White: hsl(0, 0%, 100%);
+$Gray: hsl(0, 0%, 59%);
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+$Barlow: "Barlow", sans-serif;
+$BarlowCondensed: "Barlow Condensed", sans-serif;
+$Bellefair: "Bellefair", serif;
+
+$XSmall-Font: calc(0.08 * 10vmax);
+$Small-Font: calc(0.1 * 10vmax);
+$Small-Intermediate-Font: calc(0.12 * 10vmax);
+$Very-Medium-Font: calc(0.17 * 10vmax);
+$Medium-Font: calc(0.2 * 10vmax);
+$Medium-Intermediate-Font: calc(0.25 * 10vmax);
+$Large-Font: calc(0.3 * 10vmax);
+$XSmall-Font-Mobile: calc(0.3 * 10vmin);
+$Small-Font-Mobile: calc(0.4 * 10vmin);
+$Medium-Font-Mobile: calc(0.5 * 10vmin);
+$Large-Font-Mobile: calc(0.6 * 10vmin);
+$Large-Intermediate-Font-Mobile: calc(0.7 * 10vmin);
+$XLarge-Font-Mobile: calc(0.8 * 10vmin);
+$Screen-Tab: 768px;
+$Screen-Desktop: 1440px;

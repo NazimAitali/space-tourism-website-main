@@ -1,0 +1,368 @@
+@media (min-width: $Screen-Tab) {
+  .Top-barre {
+    @include dimensionMixt(90, 95);
+  }
+  .Menu-hamburger,
+  .Menu-side {
+    display: none;
+  }
+  .Menu-container {
+    @include dimension(66, 100);
+    @include flex(flex, center, center, row);
+    background-color: rgba(41, 40, 50, 0.5);
+    position: absolute;
+    right: -6%;
+  }
+  .Menu-content {
+    @include dimension(100, 100);
+    @include flex(flex, center, center, row);
+  }
+  .Menu {
+    @include dimension(95, 100);
+    @include flex(flex, space-evenly, center, row);
+    @include size(0.17, "mobile");
+    font-family: $BarlowCondensed;
+    letter-spacing: 2.5px;
+    line-height: 17px;
+  }
+  .Items-menu {
+    height: 100%;
+    @include flex(flex, center, center, row);
+    cursor: pointer;
+  }
+  .Items-menu span {
+    display: none;
+  }
+  .Home {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+  .Home-header-container {
+    height: 604px;
+  }
+
+  .Home-header {
+    justify-content: center;
+  }
+  .Home-title {
+    @include size(0.29, "mobile");
+    letter-spacing: 2.5px;
+    height: 37%;
+  }
+  .Home-name {
+    @include size(1.95, "mobile");
+    height: 32%;
+  }
+  .Home-text {
+    @include dimension(58, 29);
+    @include size(0.21, "mobile");
+    line-height: 28.5px;
+  }
+  .Explore-container {
+    height: 420px;
+  }
+  .Explore {
+    @include size(0.46, "mobile");
+    @include dimensionPx(242, 242);
+    padding-top: 0%;
+  }
+  .Distination {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+  .Distination-header {
+    height: 872px;
+  }
+  .Distination-details {
+    height: 152px;
+    flex-direction: row;
+  }
+  .Distination-title-container {
+    height: 18%;
+    justify-content: flex-start;
+  }
+  .Distination-title {
+    justify-content: center;
+    @include size(0.25, "mobile");
+    width: 76%;
+    line-height: 18px;
+  }
+  .Distination-title span {
+    @include flex(flex, flex-end, center, row);
+    width: 10%;
+    color: $Gray;
+  }
+  .Distination-title div {
+    letter-spacing: 3.7px;
+    width: 90%;
+    padding-left: 3%;
+  }
+  .Destination-image-container {
+    height: 42%;
+  }
+  .Distination-text-container {
+    height: 16%;
+  }
+  .Distination-name-container {
+    height: 14%;
+  }
+  .Distination-text {
+    width: 72%;
+    font-size: 2vmin;
+    line-height: 27px;
+  }
+  .Distination-select-container {
+    height: 10%;
+  }
+  .Distination-img img {
+    width: 39.5%;
+  }
+
+  .Distination-select {
+    width: 46%;
+    justify-content: space-evenly;
+    font-size: 2.3vmin;
+  }
+  .Item-two {
+    width: unset;
+    justify-content: unset;
+    margin-right: 0%;
+  }
+  .Item-three {
+    width: unset;
+    justify-content: unset;
+    padding-right: 0%;
+  }
+  .Item-four {
+    width: unset;
+    justify-content: unset;
+    padding-right: 1%;
+  }
+  .Distination-Selected::after {
+    @include dimension(95, 3);
+    bottom: 4%;
+  }
+  .Item-distination a {
+    height: 62%;
+  }
+  .Item-one {
+    width: unset;
+  }
+  .Distination-name {
+    height: 78%;
+    font-size: 10.4vmin;
+  }
+  .Distance-container {
+    width: 50%;
+    height: 80%;
+    justify-content: flex-start;
+  }
+  .Travel-container {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+  }
+  .Detail-title {
+    font-size: 2vmin;
+    display: flex;
+    width: 67%;
+    justify-content: flex-end;
+    height: 18%;
+  }
+  .Detail-vlaue {
+    font-size: 3.7vmin;
+    width: 78%;
+    display: flex;
+    justify-content: flex-end;
+    height: 41%;
+  }
+  .Distance {
+    height: 76%;
+  }
+  .Travel {
+    height: 76%;
+  }
+  .Travel-container {
+    height: 80%;
+    justify-content: flex-start;
+  }
+
+  .Travel .Detail-title {
+    justify-content: flex-start;
+    width: 70%;
+    height: 0%;
+  }
+  .Travel .Detail-vlaue {
+    justify-content: flex-start;
+    width: 63%;
+    height: 40%;
+  }
+  .Crew {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+    flex-direction: column-reverse;
+  }
+  .Crew-header-container {
+    height: 529px;
+  }
+  .Crew-detail-container {
+    @include flex(flex, center, center, column-reverse);
+    height: 495px;
+  }
+
+  .Position {
+    height: 80%;
+    align-items: flex-end;
+    font-size: 3.1vmin;
+  }
+  .Crew-details-content {
+    height: 73%;
+  }
+  .Crew-details-container {
+    height: 88%;
+  }
+  .Crew-select-container {
+    height: 12%;
+  }
+  .Crew-select-content {
+    width: 16%;
+    height: 78%;
+    align-items: flex-start;
+  }
+  .Name {
+    height: 20%;
+    font-size: 5.2vmin;
+  }
+  .Crew-details-text {
+    height: 29%;
+  }
+  .Crew-details-text p {
+    width: 61%;
+    height: 56%;
+    font-size: 2.1vmin;
+    line-height: 27px;
+    margin-top: 1%;
+  }
+  .Crew-title-content {
+    height: 14.8%;
+    justify-content: flex-start;
+    position: absolute;
+    top: 1%;
+  }
+  .Crew-title {
+    width: 56%;
+    justify-content: space-evenly;
+    letter-spacing: 2.1px;
+  }
+  .Crew-title div {
+    font-size: 3vmin;
+    width: 80%;
+  }
+  .Crew-title span {
+    letter-spacing: 4.5px;
+    width: 13%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3vmin;
+  }
+  .Crew-img {
+    width: 100%;
+  }
+  .Crew-img img {
+    width: 50%;
+    margin-left: 3%;
+  }
+  .Crew-img-container {
+    height: 100%;
+    align-items: center;
+  }
+
+  .Crew-img::after {
+    content: "";
+    width: unset;
+    height: unset;
+    bottom: unset;
+    background-color: unset;
+    position: unset;
+  }
+  .Technology {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+  .Technology-header-container {
+    height: 530px;
+  }
+  .Technology-detail-container {
+    height: 496px;
+  }
+
+  .Technology-title-content {
+    height: 31%;
+  }
+  .Technology-img-container {
+    height: 69%;
+  }
+  .Technology-title {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .Technology-title span {
+    width: 10%;
+    line-height: 32px;
+    text-align: center;
+    padding-left: 3%;
+    font-size: 2.5vmin;
+    color: $Gray;
+  }
+  .Technology-title div {
+    font-size: 2.77vmin;
+    line-height: 32px;
+    width: 40%;
+  }
+  .Technology-title-content {
+    height: 31%;
+  }
+  .Technology-img-container {
+    height: 69%;
+  }
+  .Technology-select-content {
+    width: 31%;
+    height: 89%;
+  }
+  .Technology-select {
+    width: 25%;
+    height: 54%;
+    font-size: 3.5vmin;
+  }
+  .Technology-details-container {
+    justify-content: space-evenly;
+  }
+  .Technology-details-text {
+    height: 70%;
+  }
+  .Technology-details-text p {
+    width: 56%;
+    margin-top: 3%;
+  }
+  .Technology-details-content {
+    height: 30%;
+    justify-content: space-evenly;
+  }
+  .Technology-name {
+    height: 22%;
+    align-items: flex-start;
+  }
+  .Technology-position {
+    height: 34%;
+    width: 57%;
+    font-size: 1.6vmax;
+    line-height: 18px;
+    align-items: flex-end;
+  }
+  .Technology-position :nth-child(1) {
+    width: 18%;
+    padding-left: 2%;
+    width: 19%;
+  }
+  .Technology-position :nth-child(2) {
+    padding-left: 1.4%;
+    letter-spacing: 2.7px;
+  }
+}

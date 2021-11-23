@@ -1,0 +1,439 @@
+@media (min-width: $Screen-Desktop) {
+  .Top-barre {
+    @include dimensionMixt(100, 175);
+  }
+  .Menu {
+    @include dimension(100, 97);
+    @include size(0.11, "desktop");
+    justify-content: space-between;
+  }
+  .One {
+    width: 12%;
+    justify-content: space-between;
+  }
+  .Two {
+    width: 25%;
+    justify-content: space-between;
+  }
+  .Three {
+    width: 13%;
+    justify-content: space-between;
+  }
+  .Four {
+    width: 30%;
+  }
+  .Menu-container {
+    @include dimensionMixt(57.6, 96);
+    background: rgba(83, 83, 83, 0.06);
+    position: unset;
+    right: unset;
+    backdrop-filter: blur(2em);
+  }
+  .Menu-content {
+    width: 71%;
+    align-items: flex-end;
+  }
+  .Menu-selected {
+    border-bottom: 3px solid white;
+  }
+
+  .One span {
+    flex: 1;
+    padding-left: 3%;
+  }
+  .One div {
+    flex: 2;
+    @include flex(flex, center, center, row);
+    letter-spacing: 2.4px;
+    padding-left: 13%;
+  }
+
+  .Two span {
+    flex: 1;
+    padding-left: 7%;
+  }
+  .Two div {
+    flex: 2;
+    @include flex(flex, center, center, row);
+    letter-spacing: 2.6px;
+    padding-right: 6%;
+  }
+
+  .Three span {
+    flex: 1;
+    padding-left: 3%;
+  }
+  .Three div {
+    flex: 2;
+    @include flex(flex, center, center, row);
+    letter-spacing: 2.6px;
+    padding-right: 3%;
+  }
+
+  .Four span {
+    flex: 1;
+    padding-left: 3%;
+  }
+  .Four div {
+    flex: 2;
+    @include flex(flex, center, center, row);
+    letter-spacing: 2.6px;
+    padding-right: 25%;
+  }
+  .Items-menu span {
+    @include flex(flex, flex-start, center, row);
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  .Logo {
+    width: 42.4%;
+  }
+  .Logo img {
+    padding-left: 9%;
+  }
+  .Home {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    flex-direction: revert;
+  }
+  .Home-header-container,
+  .Explore-container {
+    @include dimensionMixt(50, 900);
+  }
+  .Home-title {
+    @include dimension(60, 45.5);
+    @include size(0.2, "desktop");
+    font-size: 3.1vmin;
+    letter-spacing: 4.5px;
+  }
+  .Home-name {
+    @include dimension(69, 25);
+    @include size(1.04, "desktop");
+  }
+  .Home-text {
+    @include dimension(65, 27);
+    @include size(0.107, "desktop");
+    line-height: 30px;
+    text-align: left;
+    margin-left: 11%;
+    letter-spacing: 1.1px;
+  }
+  .Home-name {
+    justify-content: flex-end;
+  }
+  .Home-text {
+    justify-content: flex-start;
+  }
+  .Explore {
+    @include dimensionPx(274, 274);
+    @include size(0.24, "desktop");
+    margin: 0% 0% 18% 16%;
+    &:hover {
+      box-shadow: 0px 0px 0px 71px rgba(255, 255, 255, 0.1);
+    }
+    transition: 0.3s ease-in;
+  }
+
+  .Explore-container {
+    align-items: flex-end;
+  }
+  .Distination {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+  }
+  .Distination-header,
+  .Distination-details {
+    height: 900px;
+  }
+  .Distination-select-container {
+    position: absolute;
+    @include position(28.7, 0, 85.6, 0, "%");
+    @include flex(flex, center, center, row);
+  }
+  .Distination-name-container {
+    @include flex(flex, center, center, row);
+    @include position(41.5, 0, 88.5, 0, "%");
+    position: absolute;
+  }
+  .Distination-text-container {
+    width: 85%;
+    position: absolute;
+    @include position(55.6, 0, 104, 0, "%");
+    @include flex(flex, center, center, row);
+  }
+  .Distination-text {
+    @include size(0.12, "desktop");
+    width: 73%;
+    line-height: 32px;
+    text-align: left;
+  }
+  .Distination-name {
+    @include size(0.69, "desktop");
+  }
+  .Distination-title-container {
+    height: 29%;
+    justify-content: center;
+    align-items: center;
+    margin: 16% 0% 0% 6%;
+  }
+  .Distination-title {
+    @include size(0.2, "desktop");
+    line-height: 19px;
+    width: 65%;
+  }
+  .Distination-title div {
+    letter-spacing: 4.2px;
+    padding-left: 6%;
+  }
+  .Destination-image-container {
+    @include dimension(89, 70);
+  }
+  .Distination-img img {
+    width: 70%;
+  }
+  .Distination-img {
+    @include flex(flex, flex-end, flex-start, row);
+  }
+  .Distination-select {
+    width: 47%;
+    @include size(0.11, "desktop");
+  }
+  .Item-four {
+    margin-left: 0%;
+  }
+  .Item-one,
+  .Item-two,
+  .Item-three {
+    margin-right: 2%;
+  }
+  .Distination-Selected::after {
+    height: 2%;
+  }
+  .Items-menu:hover {
+    border-bottom: 3px solid #969696;
+  }
+  .Item-distination {
+    align-items: flex-end;
+    height: 93%;
+  }
+  .Item-distination a {
+    letter-spacing: 3px;
+    align-items: center;
+  }
+  .Distance-container {
+    @include dimension(45, 21);
+  }
+  .Travel-container {
+    height: 20%;
+  }
+  .Distance {
+    @include dimension(100, 39);
+  }
+  .Detail-title {
+    @include dimension(64.5, 19);
+    @include size(0.1, "desktop");
+  }
+  .Detail-vlaue {
+    @include dimension(78.5, 42);
+    @include size(0.195, "desktop");
+    line-height: 41px;
+  }
+  .Distination-text-container ::after {
+    width: 73%;
+    top: 133%;
+  }
+  .Distination-details {
+    align-items: flex-end;
+  }
+  .Distance {
+    align-items: flex-start;
+  }
+  .Detail-title {
+    letter-spacing: 2px;
+  }
+  .Travel-container {
+    width: 55%;
+  }
+  .Travel {
+    @include dimension(95, 33);
+    align-items: flex-start;
+  }
+  .Travel .Detail-title {
+    height: 30%;
+    align-items: flex-end;
+    letter-spacing: 2.3px;
+  }
+  .Travel .Detail-vlaue {
+    height: 55%;
+  }
+  .Crew {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    flex-direction: row-reverse;
+  }
+  .Crew-header-container,
+  .Crew-detail-container {
+    height: 900px;
+  }
+  .Crew-title-content {
+    @include position(13.5, 0, -81, 16, "%");
+  }
+  .Crew-title {
+    width: 67%;
+    letter-spacing: 4.5px;
+    margin: 0% 0% 1.5% 0%;
+  }
+  .Crew-title div {
+    @include size(0.2, "desktop");
+    width: 79%;
+  }
+  .Crew-title span {
+    letter-spacing: 5.5px;
+    width: 10%;
+    @include size(0.2, "desktop");
+  }
+  .Crew-details-container {
+    height: 85%;
+  }
+  .Crew-header-container,
+  .Crew-detail-container {
+    width: 50%;
+  }
+  .Crew-header {
+    position: relative;
+  }
+  .Crew-img img {
+    width: 71.5%;
+    margin-left: -11%;
+  }
+  .Position {
+    @include dimension(77, 81.2);
+    @include size(0.2, "desktop");
+    justify-content: flex-start;
+    letter-spacing: 2.5px;
+  }
+  .Name {
+    @include size(0.39, "desktop");
+    align-items: flex-start;
+    margin-bottom: 0%;
+  }
+  .Crew-details-content {
+    @include flex(flex, space-between, flex-end, column);
+    height: 67%;
+  }
+  .Name {
+    @include dimension(100, 15);
+    margin-right: -7%;
+  }
+  .Crew-details-text {
+    height: 31%;
+  }
+  .Crew-details-text p {
+    @include dimension(65, 82);
+    @include size(0.15, "desktop");
+    line-height: 33px;
+  }
+  .Crew-select-content {
+    width: 41%;
+  }
+  .Crew-select-container {
+    width: 59%;
+    justify-content: flex-start;
+  }
+  .Crew-select {
+    @include dimensionPx(18, 18);
+  }
+  .Technology {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    flex-direction: row-reverse;
+  }
+
+  .Technology-header-container,
+  .Technology-detail-container {
+    height: 900px;
+  }
+  .Technology-title-content {
+    @include position(0, 0, -100, 0, "%");
+    height: 27%;
+    position: absolute;
+  }
+  .Technology-img-container,
+  .Technology-details-container {
+    height: 100%;
+  }
+  .Technology-title span {
+    width: 12%;
+    padding-left: 1%;
+    @include size(0.2, "desktop");
+  }
+  .Technology-title div {
+    @include size(0.2, "desktop");
+    line-height: 30px;
+    width: 44%;
+    letter-spacing: 4.2px;
+  }
+
+  .Technology-img {
+    height: 81%;
+    justify-content: flex-end;
+  }
+  .Technology-img img {
+    @include dimension(80, 73);
+    object-fit: unset;
+  }
+  .Technology-select-container {
+    @include dimension(28, 81);
+    @include flex(flex, flex-end, center, column);
+    position: absolute;
+  }
+  .Technology-details-container {
+    justify-content: center;
+  }
+  .Technology-details-text p {
+    margin-top: 0%;
+  }
+  .Technology-position {
+    height: 7%;
+    align-items: flex-start;
+  }
+  .Technology-details-content {
+    justify-content: flex-end;
+    height: 44%;
+  }
+  .Technology-name {
+    @include dimension(60, 21);
+    margin-right: -1%;
+  }
+  .Technology-details-text p {
+    @include dimension(59, 80);
+    @include size(0.12, "desktop");
+    line-height: 32px;
+    letter-spacing: 0.7px;
+    text-align: inherit;
+  }
+  .Technology-details-text {
+    height: 34%;
+  }
+  .Technology-position {
+    width: 91%;
+    @include size(0.1, "desktop");
+    letter-spacing: 3px;
+  }
+  .Technology-detail-container {
+    width: 55%;
+  }
+  .Technology-header-container {
+    width: 45%;
+  }
+  .Technology-position :last-child {
+    padding-left: 1%;
+    letter-spacing: 3.6px;
+  }
+  .Technology-details-text {
+    align-items: flex-end;
+  }
+  .Technology-select {
+    @include dimension(64, 21);
+  }
+  .Technology-select-content {
+    @include flex(flex, space-evenly, center, column);
+    height: 52%;
+  }
+}
