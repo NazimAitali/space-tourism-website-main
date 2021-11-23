@@ -91,6 +91,16 @@
   .Logo img {
     padding-left: 9%;
   }
+  .Logo::after {
+    content: "";
+    @include dimensionMixt(31, 1);
+    width: 31%;
+    height: 1px;
+    background-color: rgba($Gray, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 12%;
+  }
   .Home {
     background-image: url("../assets/home/background-home-desktop.jpg");
     flex-direction: revert;
