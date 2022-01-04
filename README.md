@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Frontend Mentor - Space tourism website 1440px.png)
+![](https://github.com/NazimAitali/space-tourism-website-main/blob/master/Frontend%20Mentor%20-%20Space%20tourism%20website%201440px%20.png)
 ![](./Frontend Mentor - Space tourism website 768px.png)
 ![](./Frontend Mentor - Space tourism website 375px.png)
 
